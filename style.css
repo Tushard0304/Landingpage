@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* #box{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+#inner{  // about vw,vh
+    width: 50vw;
+    height: 50vh;
+    background-color: blue;
+} */
+
+/* h1{
+    font-size: 8vmin;
+} */
+
+/* #parent{        // about em and rem
+    background-color: #bababa;
+    width: 40%;
+    font-size: 50px;
+}
+h1{
+    font-size: 1rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 5rem;
+} */
+/*
+.parent{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;   for centering the elements in y axis 
+    justify-content:space-evenly;    for centering the elements in x axis 
+    flex-wrap: wrap; 
+    flex-direction: column;
+}
+.child1{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    border: 2px solid black;
+}
+.child2{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    border: 2px solid black;
+
+}
+.child3{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    border: 2px solid black;
+
+} */
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    border-bottom: 4px solid #dada;
+}
+.navpart2{
+    display: flex;
+    /* background-color: blue; */
+    align-items: center;
+    gap: 4vw;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 800;
+}
+.nav h4{
+    font-size: 1.5vw;
+}
+.nav i{
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+.nav button{
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #855B31;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    /* background-color: crimson; */
+    padding: 5vw 5vw;
+}
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4vw;
+}
+.left h1 span{
+    color: #855B31;
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+.content button{
+    font-size: 1.3vw;
+    padding: 1.3vw 2.3vw;
+    background-color: #855B31;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(78, 54, 59); */
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .nav{
+        background-color: #855B31;
+        color: whitesmoke;
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5.1vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 4.5vw;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 4vw;
+        font-weight: 500;
+        color: #423b3b;
+        width: 100%;
+        margin-top: 4vw;
+        margin-bottom: 5vw;
+    }
+    .content button{
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+}
